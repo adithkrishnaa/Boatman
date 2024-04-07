@@ -32,7 +32,7 @@
 
 <!-- navbar -->
 
-    <section class="flex items-center border bg-gray-100  mx-auto">
+    <section id="nav" class="flex items-center border bg-gray-100  mx-auto">
       <nav class="lg:flex w-full relative ">
         <div class=" flex justify-between ">
       <a href="#home"><img class=" h-20 lg:h-24 lg:size-56 lg:absolte z-20 " src="./image/logo.svg" alt="logo"></a>
@@ -104,7 +104,7 @@
             <h1 class="text-3xl xl:text:5xl  text-gray-300 font-semibold xl:font-bold font-poppin ">Tirupur's Finest Semi-Husked Coconuts - Exported Worldwide</h1>
             <p class="text-slate-300 xl:text-xl font-inter font-light xl:font-normal">Welcome to Boatman Overseas, your trusted source for premium semi-husked coconuts from the heart of Tirupur, Tamil Nadu. We specialize in exporting the finest quality coconuts to destinations all around the globe.</p>
             <button class="border p-2 font-semibold font-poppin rounded-lg text-slate-300 hover:bg-secondry">
-              Contact Now
+              <a href="#content_info">Contact Now</a>
             </button>
           </div>
         </div>
@@ -205,13 +205,13 @@
   </section>
 
 
-  <section class="mb-6 my-auto ">
+  <section class="mb-6 max-h-screen my-auto ">
     <div>
       <div class="flex ">
         <div class="lg:w-1/2 hidden lg:flex">
           <img class="max-h-screen" src="./image/aboutus.png" alt="">
         </div>
-        <div class="lg:w-1/2 my-auto max-h-svh container items-center px-16 space-y-6 md:space-y-10 lg:space-y-12 ">
+        <div class="lg:w-1/2 my-auto py-8 lg:py-0 max-h-svh container items-center px-16 space-y-10 md:space-y-10 lg:space-y-12 ">
           <h1 class="text-2xl leading-10 font-thin md:text-4xl md:leading-relaxed lg:leading-loose xl:leading-relaxed font-pompiere xl:text-6xl">
             "Exporting our heritage worldwide, one coconut at a time. From our land to your hands, experience the essence of quality and tradition, shipped globally."
           </h1>
@@ -222,61 +222,41 @@
 
   <!-- Contact -->
 
-  <section id="contact" class="bg-[url('image/contact_img.png')] bg-cover relative z-0 min-h-screen">
+  <section id="contact" class="bg-[url('image/contact_img.png')] bg-cover relative justify-items-center z-0 min-h-screen">
     <img class="absolute z-10 top-0 right-0 -mt-3.5" src="./image/logo.svg" alt="">
     <div class= "min-h-screen md:w-2/3 lg:w-1/2 bg-primary bg-opacity-80">
       <div class=" p-12 pt-20  ">
         <h1 class="text-2xl font-poppin md:text-5xl md:font-bold text-slate-200 font-bold">Contact  Us</h1>
         <hr class="border-secondry w-12  top-2 rounded-md border-solid border-4">
-        <p class="font-light font-inter  text-slate-200 space-y-10 lg:space-y-16">We're here to assist you with any inquiries or orders you may have. Get in touch with our team today:</p>
-        
-        
+        <p class="font-light font-inter  text-slate-200 space-y-10 lg:space-y-16">We're here to assist you with any inquiries or orders you may have. Get in touch with our team today:</p>  
         <!-- Forms -->
-        
-        <!-- <form   action="https://formspree.io/f/mgegnqej"
-        method="POST" class="py-8 border px-5 my-5 rounded-lg">
-        <label for="name"  class=" text-slate-100 font-inter">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full h-12 pl-3 rounded-md mt-1">
-        <div class="lg:flex justify-between lg:gap-x-3 ">
-          <div>
-        <label for="email"  class=" text-slate-100 font-inter">Email</label> 
-        <input type="email" id="email" name="email" placeholder="example@youremail.com" required class=" w-full h-12  pl-3 rounded-md mt-1">
-      </div>
-      <div>
-        <label for="phone" class=" text-slate-100 font-inter">Phone No.</label>
-        <input type="number" name="number" id="number" placeholder="(123) 456 - 7890" required class=" w-full h-12  pl-3 rounded-md mt-1">
-      </div>
-      </div>
-        <label for="message" class=" text-slate-100 font-inter">Message</label>
-        <textarea name="message" id="message" cols="10" rows="5" placeholder="Type your message here..." required class="w-full  pl-3 rounded-md mt-1"></textarea>
-        <button  type="submit" class=" border p-2 rounded-lg mt-2 text-slate-100 font-poppin">
-          Send Message
-        </button>
-      </form> -->
-
-
-<form action="#" id="contactForm" class="py-8 border px-5 my-5 rounded-lg">
-    <label for="name" class="text-slate-100 font-inter">Name</label>
-    <input type="text" id="name" name="entry.590916267" placeholder="Your Name" required class="w-full h-12 pl-3 rounded-md mt-1">
-    <div class="lg:flex justify-between lg:gap-x-3">
+<form action="#" id="contactForm" class="py-8 border px-5  my-5 rounded-lg">
+  <div class="lg:flex justify-items-center lg:gap-3 ">
+    <div>
+      <label for="name" class="text-slate-100 font-inter">Name:</label>
+      <input type="text" id="name" name="entry.590916267" placeholder="Your Name" required class="w-full focus:outline-none  h-12 pl-3 rounded-md mt-1">
+    </div>
+    <div>
+      <label for="email" class="text-slate-100 font-inter">Email:</label>
+      <input type="email" id="email" name="entry.1195376812" placeholder="example@youremail.com" required class="w-full focus:outline-none h-12 pl-3 rounded-md mt-1">
+  </div>
+  </div>
+    <div class="lg:flex justify-items-center lg:gap-x-3">
         <div>
-            <label for="email" class="text-slate-100 font-inter">Email</label>
-            <input type="email" id="email" name="entry.1195376812" placeholder="example@youremail.com" required class="w-full h-12 pl-3 rounded-md mt-1">
+            <label for="country" class="text-slate-100 font-inter">Country:</label>
+            <input type="text" id="email" name="entry.1195376812" placeholder="Country" required class="w-full focus:outline-none h-12 pl-3 rounded-md mt-1">
         </div>
         <div>
-            <label for="phone" class="text-slate-100 font-inter">Phone No.</label>
-            <input type="tel" id="phone" name="entry.1730480520" placeholder="(123) 456 - 7890" required class="w-full h-12 pl-3 rounded-md mt-1">
+            <label for="phone" class="text-slate-100 font-inter">Phone No:</label>
+            <input type="tel" id="phone" name="entry.1730480520" placeholder="(123)456-7890" required class="w-full focus:outline-none h-12 pl-3 rounded-md mt-1">
         </div>
     </div>
-    <label for="message" class="text-slate-100 font-inter">Message</label>
-    <textarea name="entry.254308505" id="message" cols="10" rows="5" placeholder="Type your message here..." required class="w-full pl-3 rounded-md mt-1"></textarea>
-    <button type="submit" id="submitButton" class="border p-2 rounded-lg mt-2 text-slate-100 font-poppin">
+    <label for="message" class="text-slate-100 font-inter">Message:</label>
+    <textarea name="entry.254308505" id="message" cols="10" rows="5" placeholder="Type your message here..." required class="w-full focus:outline-none pl-3 pt-2 rounded-md mt-1"></textarea>
+    <button type="submit" id="submitButton" class="border hover:bg-secondry focus:bg-secondry transition-colors duration-500 p-2 rounded-lg mt-2 text-slate-100 font-poppin">
         Send Message
     </button>
 </form>
-
-<div id="responseMessage"></div>
-    
 
       <p class="text-slate-200 font-inter">We look forward to hearing from you and serving your coconut export needs!</p>
       <h2 class="text-secondry text-2xl font-semibold font-poppin">Customer Service Hours:</h2>
@@ -285,8 +265,8 @@
     </div>
   </section>
 
-  <section >
-    <div class="md:flex py-10 md:py-6 font-poppin">
+  <section id="content_info" >
+    <div class="md:flex relative py-10 md:py-6 font-poppin">
       <div class="text-center  py-10 px-7 md:px-2   lg:px-10 md:border-r-2 border-dotted border-black  md:space-y-1 space-y-3">
         <span class=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-10 h-10 mx-auto">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
@@ -311,7 +291,17 @@
         <p class="text-lg">send enquiry to:
           gokulrajagopal.msc@gmail.com</p>
       </div>
+      <div class="absolute bottom-3 right-2">
+        <a href="#nav">
+        <div class="border bg-secondry p-2.5 rounded-full text-white bottom-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+        </svg>
+      </div>
+    </a>
+      </div>
     </div>
+    
   </section>
 
   <!-- Footer -->
@@ -328,7 +318,7 @@
           <li class="font-inter font-light"><a href="#home">Home</a></li>
           <li class="font-inter font-light"><a href="#about">About Us</a></li>
           <li class="font-inter font-light"><a href="./OurProduct.html">Our Product</a></li>
-          <li class="font-inter font-light"><a href="">Services</a></li>
+          <li class="font-inter font-light"><a href="./Service.html">Services</a></li>
           <li class="font-inter font-light"><a href="#contact">Contact Us</a></li>
         </div>
         <div class="list-none mt-2 md:w-2/4 lg:w-1/5 text-slate-200 p-2 space-y-2">
