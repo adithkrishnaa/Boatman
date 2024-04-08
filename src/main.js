@@ -68,47 +68,44 @@ const toggleSearch = () => {
 
 
 
-//   window.onbeforeunload = () => {
-//     for(const form of document.getElementsByTagName('form')) {
-//       form.reset();
-//     }
-//   }
+  // window.onbeforeunload = () => {
+  //   for(const form of document.getElementsByTagName('form')) {
+  //     form.reset();
+  //   }
+  // }
+
+
+              
+function sendemail(){
+
+	var email=document.getElementById("email").value;
+	var from_name=document.getElementById("name").value;
+  var country=document.getElementById("country").value;
+  var phone=document.getElementById("phone").value;
+	var message=document.getElementById("message").value;
+  
+
+	var templateParams = {
+        to_name: from_name,
+        email: email,
+        country: country,
+        phone: phone,
+        message: message
+      };
+
+      emailjs.send('service_nj63ymj', 'template_0iu6b3c', templateParams)
+  .then(function(response) {
+     console.log('SUCCESS!', response.status, response.text);
+     window.alert("Sent successfully!");
+     
+  })
+
+     
+}
 
 
 
 
 
-// script.js
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Get form input values
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var message = document.getElementById("message").value;
-
-    // Construct the form data
-    var formData = new FormData();
-    formData.append("entry.590916267", name);
-    formData.append("entry.1195376812", email);
-    formData.append("entry.1730480520", phone);
-    formData.append("entry.254308505", message);
-
-    // Send the form data using AJAX
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://docs.google.com/forms/d/e/1FAIpQLScU2fcGEtuYTRw3AwD8pV_okp9zr51P3yXgUrgiFHBAgs7sVw/formResponse", true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            // Handle the successful form submission
-            document.getElementById("contactForm").reset(); // Reset the form
-            document.getElementById("responseMessage").innerText = "Thank you for your message. We will be in touch soon!";
-        } else {
-            // Handle errors or unsuccessful form submission
-            document.getElementById("responseMessage").innerText = "Oops! Something went wrong. Please try again later.";
-        }
-    };
-    xhr.send(formData);
-});
 
