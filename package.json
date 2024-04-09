@@ -8,7 +8,7 @@
     "tailwind:build:prod": "postcss style.css -o ./src/style.css",
     "server": "servor src index.html 8080 --browse --reload",
     "dev": "run-p \"tailwind:build:dev\" \"server\" ",
-    "prod":"npm run tailwind:build:prod"
+    "prod": "npm run tailwind:build:prod"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,8 @@
     "cssnano": "^6.1.2",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^11.0.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.13",
     "servor": "^4.0.2",
     "tailwindcss": "^3.4.3"
   }
