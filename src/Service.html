@@ -11,7 +11,7 @@
   <section>
     <div class=" flex flex-wrap bg-primary text-white text-xs space-x-5 justify-end md:p-1 font-inter  list-none">
         <li class=" flex text-xs text-nowrap my-auto" >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-5 mx-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-1">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
           </svg>
           <a href="tel:+919842523225">+91 9842523225</a>
@@ -28,41 +28,43 @@
 
 <!-- navbar -->
 
-<section id="nav" class="flex items-center border -mb-0.5 bg-gray-100  mx-auto">
-  <nav class="lg:flex w-full relative ">
-    <div class=" flex justify-between ">
-  <a href="#home"><img class=" lg:pl-16 h-20 lg:h-20 lg:absolte z-20 " src="./image/logo (2).svg" alt="logo"></a>
+<section id="nav" class="flex items-center border  bg-gray-100  mx-auto">
+  <nav class="lg:flex w-full " style="margin-bottom: -1px;">
+    <div class=" flex my-auto mx-auto ml-auto justify-between ">
+  <a href="#home"><img class="pl-5  h-14 lg:h-20 lg:absolte " src="./image/logo (2).png" alt="logo"></a>
   <button onclick="toggleMenu()" class="lg:hidden ">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-4">
       <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
     </svg>
   </button>
 </div>
-<div class=" hidden lg:block   border-black w-20 lg:w-14 xl:w-20 h-24 lg:left-56 lg:top-6 lg:h-20 z-10 lg:absolute xl:left-52 bg-white   " style="transform: skewX(-20deg);">
+
 
 </div>
-  <div  class="ml-auto  md:mt-3 lg:mt-7">
-    <ul id="menu" class="lg:flex my-auto hidden text-slate-200   w-full m-0  ml-auto xl:gap-x-28  lg:gap-x-9  bg-primary px-8 lg:px-12  lg:pl-5 xl:pl-14 
-    font-poppin md:text-sm lg:font-semibold items-center ">
-      <li  class="  lg:py-7 lg:mr-2  hover:text-secondry ">
-        <a href="./index.html">Home  </a></li>
+  <div  class="ml-auto relative md:mt-3 lg:mt-7 lg:flex">
+    <div class=" hidden lg:block lg:absolute lg:-left-12 w-20 lg:w-20 xl:w-20  lg:h-20 bg-white" style="transform: skewX(-38deg);"></div>
+    <ul id="menu" class="lg:flex my-auto hidden text-slate-200 lg:h-20  w-full m-0  ml-auto xl:gap-x-12  lg:gap-x-5  bg-primary px-8 lg:px-12  lg:pl-16  
+          font-poppin md:text-sm lg:font-semibold items-center ">
+
+      <li  class="relative p-2 lg:p-0  lg:py-7   hover:text-secondry  ">
+        <a href="./index.html#Home">Home </a></li>
       </li>
-      <li class="p-2 lg:py-6  hover:text-secondry flex-none focus:border-t-8 focus:border-solid active:border-t-8 active:border-solid active:border-secondry">
-        <a href="./index.html"> About Us </a>
+      <li class="p-2 lg:py-6  hover:text-secondry flex-none ">
+        <a href="./index.html#about"> About Us </a>
       </li>
       <li class="relative p-2 lg:py-6   hover:text-secondry   flex-none group">
-        <a href="./OurProduct.html"><span class="flex">Our Product <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+        <a href="./OurProduct.html"> <span class="flex">Our Product <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
           <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </svg></span> 
         </a>
         <ul >
         <li class=" lg:absolute z-10 w-96 hidden top-12 bg-drop bg-opacity-80 text-black lg:p-2 rounded-md lg:shadow-lg group-hover:block  lg:w-32  z-1 text-xs p-3">
-          <a href="./OurProduct.html">Semi-Husked Coconut</a>
+          <a href="./OurProduct.html#semi">Semi Husked Coconut</a>
         </li>
       </ul>
       </li>
-      <li class="relative p-2 lg:py-6  hover:text-secondry active:lg:border-t-8 active:lg:border-solid active:border-secondry group">
-        <a href="./Service.html"><hr class="absolute -top-1 outline-none w-20 h-2 rounded-lg bg-secondry"> <span class="flex">Services
+      <li class="relative p-2 lg:py-6  hover:text-secondry  group">
+        <a href="./Service.html"> <span class="flex"><hr class=" hidden lg:block absolute -top-1.5 outline-none w-20 h-2 rounded-b-sm bg-secondry">Services
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
           </svg></span> 
@@ -73,10 +75,10 @@
           <li class="mt-1 p-2"><a href="#choose">Why Choose Us?</a></li>
         </ul>
       </li>
-      <li class="p-2 lg:py-6  hover:text-secondry active:lg:border-t-8 active:lg:border-solid active:border-secondry">
-        <a href="./index.html">Contact</a>
+      <li class="p-2 lg:py-6  hover:text-secondry ">
+        <a href="./index.html#contact">Contact</a>
       </li>
-      <li class="w-24 xl:-ml-20 xl: pr-0 hidden lg:flex">
+      <li class="w-24 xl:-ml-16  xl:pl-5 hidden lg:flex">
         <div class="relative">
           <input type="search" id="searchInput" class="cursor-pointer  relative z-10 h-8 w-8  text-primary rounded-full  bg-white  outline-none  focus:cursor-text pl-4 focus:pl-6 " placeholder="Search" />
           <div id="searchSuggestions" class="absolute text-black top-full left-0 right-0 bg-drop bg-opacity-80  rounded-lg p-1 hidden"></div>

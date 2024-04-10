@@ -100,7 +100,7 @@ const toggleSearch = () => {
       filteredSuggestions.forEach(suggestion => {
         const suggestionElement = document.createElement('div');
         suggestionElement.textContent = suggestion.name;
-        suggestionElement.classList.add('p-2', 'cursor-pointer');
+        suggestionElement.classList.add('p-2','w-40','cursor-pointer');
         suggestionElement.addEventListener('click', () => {
           window.location.href = suggestion.link;
         });
