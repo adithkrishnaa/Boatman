@@ -17,6 +17,12 @@ module.exports = {
         inter: ["Inter"],
         pompiere:["Pompiere"]
       },
+      height:{
+        max:'542px',
+        prolg:'367px',
+        promd:'335px',
+        navb:'110px'
+      }
     },
   },
   plugins: [],

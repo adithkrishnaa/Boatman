@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth transition-all duration-300">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./image/logo-titel.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
   <section>
     <div class=" flex flex-wrap bg-primary text-white text-xs space-x-5 justify-end md:p-1 font-inter  list-none">
         <li class=" flex text-xs text-nowrap my-auto" >
@@ -27,10 +27,10 @@
 
       <!-- nav -->
       
-      <section id="nav" class="flex items-center border  bg-gray-100  mx-auto"  >
-        <nav class="lg:flex w-full " style="margin-bottom: -1px;" >
+      <section id="nav" class="flex items-center border-none bg-white" >
+        <nav class="lg:flex w-full max-h-navb border-none" style="margin-bottom:-1px;">
           <div class=" flex my-auto mx-auto ml-auto justify-between ">
-        <a href="#home"><img class="pl-5 h-16 lg:h-20 lg:absolte " src="./image/logo (2).png" alt="logo"></a>
+        <a href="#home"><img class="h-20  lg:h-navb  lg:absolte z-20 " src="./image/logo.png" alt="logo"></a>
         <button onclick="toggleMenu()" class="lg:hidden ">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-4">
             <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
@@ -41,9 +41,9 @@
       
       </div>
         <div  class="ml-auto relative md:mt-3 lg:mt-7 lg:flex">
-          <div class=" hidden lg:block lg:absolute lg:-left-12 w-20 lg:w-20 xl:w-20  lg:h-20 bg-white" style="transform: skewX(-38deg);"></div>
-          <ul id="menu" class="lg:flex my-auto hidden text-slate-200 lg:h-20  w-full m-0  ml-auto xl:gap-x-12  lg:gap-x-5  bg-primary px-8 lg:px-12  lg:pl-16  
-          font-poppin md:text-sm lg:font-semibold items-center ">
+          <div class=" hidden lg:block lg:absolute lg:-left-12 w-20 lg:w-20 xl:w-20  lg:h-20 border-none bg-white" style="transform: skewX(-38deg);"></div>
+    <ul id="menu" class="lg:flex my-auto hidden text-slate-200 lg:h-20 border-none  w-full m-0  ml-auto xl:gap-x-12  lg:gap-x-5  bg-primary px-8 lg:px-12  lg:pl-16  
+          font-poppin md:text-sm shadow-2xl border-primary lg:font-semibold items-center ">
     
             <li  class="relative p-2 lg:p-0  lg:py-7   hover:text-secondry  ">
               <a href="./index.html#Home">Home </a></li>
@@ -52,15 +52,8 @@
               <a href="./index.html#about"> About Us </a>
             </li>
             <li class="relative p-2 lg:py-6   hover:text-secondry   flex-none group">
-              <a href="#product"> <span class="flex"><hr class=" hidden lg:block absolute -top-1.5 outline-none w-20 h-2 rounded-b-sm bg-secondry">Our Product <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-              </svg></span> 
+              <a href="#product"> <span class="flex"><hr class=" hidden lg:block absolute -top-1.5 outline-none w-20 h-2 rounded-b-sm bg-secondry">Our Product</span> 
               </a>
-              <ul >
-              <li class=" lg:absolute z-10 w-96 hidden top-12 bg-drop bg-opacity-80 text-black lg:p-2 rounded-md lg:shadow-lg group-hover:block  lg:w-32  z-1 text-xs p-3">
-                <a href="#semi">Semi Husked Coconut</a>
-              </li>
-            </ul>
             </li>
             <li class="relative p-2 lg:py-6  hover:text-secondry  group">
               <a href="./Service.html"> <span class="flex">Services
@@ -96,7 +89,7 @@
        <section id="product">
         <div class="border-b-primary ">
             <div>
-                <img src="./image/ourproduct_img.png" alt="">
+                <img class="object-cover w-full " style="max-height: 550px;" src="./image/ourproduct.jpg" alt="">
             </div>
         </div>
        </section>
@@ -175,21 +168,21 @@
             <hr class="border-line w-12  top-0 rounded-md border-solid border-4">
         </div>
         <div class="p-7 lg:px-20 lg:py-10 mx-auto">
-            <div class="grid md:grid-cols-4   mx-auto gap-y-2 md:gap-5 ">
-                <div class="mx-auto md:mx-0 md:col-span-1 md:row-span-1  hover:shadow-2xl focus:shadow-2xl overflow-hidden ">
+            <div class="grid md:grid-cols-4 md:grid-rows-2 md:h-promd lg:h-prolg xl:h-max  mx-auto gap-y-2 md:gap-5 " >
+                <div class="mx-auto md:mx-0 object-fill md:col-span-1 md:row-span-1  hover:shadow-2xl focus:shadow-2xl overflow-hidden ">
                     <img class="max-w-52  md:max-w-full lg:w-full transform  transition duration-700 hover:scale-125 focus:scale-125 " src="./image/about_1.png" alt="" srcset=""></div>
                 <div class="mx-auto md:mx-0 md:col-span-2 md:row-span-2  hover:shadow-2xl focus:shadow-2xl overflow-hidden">
-                    <img class="max-w-52 md:max-w-full transform bg-cover transition duration-700 hover:scale-125 focus:scale-125" src="./image/about_2.png" alt="" srcset=""></div>
+                    <img class="max-w-52 md:max-w-full object-fill transform bg-cover transition duration-700 hover:scale-125 focus:scale-125 md:h-promd lg:h-prolg xl:h-max" src="./image/about2.jpg" alt="" srcset=""></div>
                 <div class="mx-auto md:mx-0 md:col-span-1 md:row-span-1  hover:shadow-2xl focus:shadow-2xl overflow-hidden">
-                    <img class="max-w-52 md:max-w-full transform  transition duration-700 hover:scale-125 focus:scale-125" src="./image/about_3.png" alt="" srcset=""></div>
+                    <img class="max-w-52 md:max-w-full transform  transition duration-700 hover:scale-125 focus:scale-125" src="./image/about3.jpg" alt="" srcset=""></div>
                 <div class="mx-auto md:mx-0 md:col-span-1 md:row-span-1 overflow-hidden hover:shadow-2xl focus:shadow-2xl">
                     <img class="max-w-52 md:max-w-full transform  transition duration-700 hover:scale-125 focus:scale-125" src="./image/about_4.png" alt="" srcset=""></div>
                 <div class="mx-auto md:mx-0 md:col-span-1 md:row-span-1 overflow-hidden hover:shadow-2xl focus:shadow-2xl">
                     <img class="max-w-52 md:max-w-full transform  transition duration-700 hover:scale-125 focus:scale-125" src="./image/about_5.png" alt="" srcset=""></div>
-                    </div>
+              </div>
         </div>
         <div class="flex justify-center py-4 md:py-7">
-          <button class="font-inter text-center scale-100 transition duration-700  hover:scale-105  text-white  rounded-lg flex font-semibold p-3 bg-secondry hover:bg-blue-400 ">
+          <button class="font-inter text-center scale-100 transition duration-700  hover:scale-105  text-white  rounded-lg flex font-semibold p-3 bg-secondry hover:bg-blue-800 ">
               Enquire Now
               <span class="ml-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -202,47 +195,48 @@
 
 
      <section class="bg-primary  py-10">
-        <div class="px-16">
-          <div class="border-b-2 md:flex flex-wrap lg:flex-nowrap lg:mb-3 border-dotted">
-            <div class="md:w-3/4 lg:w-2/5">
-              <img src="./image/logo_foo.png" alt="logo">
-              <p class="text-slate-200 font-light font-poppin">Our vision to lead the global coconut export industry with quality, sustainability, and customer satisfaction, enriching lives worldwide with Tirupur's finest coconuts.</p>
-            </div>
-            <div class="list-none mt-2 md:w-1/4 lg:w-1/5 text-slate-200 p-2 space-y-2">
-              <h2 class="text-lg font-semibold text-secondry font-poppin">Quick Links</h2>
-              <li class="font-inter font-light"><a href="#home">Home</a></li>
-              <li class="font-inter font-light"><a href="#about">About Us</a></li>
-              <li class="font-inter font-light"><a href="./OurProduct.html">Our Product</a></li>
-              <li class="font-inter font-light"><a href="./Service.html">Services</a></li>
-              <li class="font-inter font-light"><a href="#contact">Contact Us</a></li>
-            </div>
-            <div class="list-none mt-2 md:w-2/4 lg:w-1/5 text-slate-200 p-2 space-y-2">
-              <h2 class="text-lg font-semibold font-poppin text-secondry">Services</h2>
-              <li class="font-inter font-light"><a href="">Quality Sourcing</a></li>
-              <li class="font-inter font-light"><a href="">Customized Export Solutions</a></li>
-              <li class="font-inter font-light"><a href="">Quality Assurance</a></li>
-              <li class="font-inter font-light"><a href="">Sustainable Practices</a></li>
-              <li class="font-inter font-light"><a href="">Timely Delivery</a></li>
-              <li class="font-inter font-light"><a href="">Customer Support</a></li>
-            </div>
-            <div class="list-none mt-2  md:w-2/4 lg:w-1/5 text-slate-200 p-2 space-y-2">
-              <h2 class="text-lg font-semibold font-poppin text-secondry">Contact Us</h2>
-              <li class="font-inter font-light"><a href="tel:+919842523225">+91 9842523225</a></li>
-              <li class="font-inter font-light"><a href="mailto:gokulrajagopal.msc@gmail.com">gokulrajagopal.msc@gmail.com</a></li>
-              <p class="font-inter font-light">2/900, Gandhiji 1st Street, SR Nagar (south), Andipalayam (po), Mangalam Road, Tirupur - 641687. Contact: 98425</p>
-            </div>
+      <div class="px-16">
+        <div class="border-b-2 md:flex flex-wrap xl:gap-x-16  lg:flex-nowrap pb-4 lg:pb-8 mb-2 lg:mb-3 border-dotted">
+          <div class="md:w-3/4 lg:w-2/5 space-y-3">
+            <img class="max-h-20" src="./image/foo.png" alt="logo">
+            <p class="text-slate-200 font-light font-poppin">Our vision to lead the global coconut export industry with quality, sustainability, and customer satisfaction, enriching lives worldwide with Pollachi's finest coconuts.</p>
           </div>
-            <div class="text-slate-200 md:flex md:justify-between font-semibold font-poppin">
-            <div>
-              <p>©2024BoatmanOverseas. All rights reserved</p>
-            </div>
-            <div class="md:flex md:gap-x-6">
-              <p>Privacy & Policy</p>
-              <p>Terms & Condition</p>
-            </div>
+          <div class="list-none mt-2 md:w-1/4 lg:w-48 text-slate-200 p-2 lg:p-2 lg:pl-2  space-y-3">
+            <h2 class="text-lg lg:w-40 font-semibold text-secondry font-poppin">Quick Links</h2>
+            <li class="font-inter lg:w-40 hover:text-secondry font-light"><a href="./index.html#home">Home</a></li>
+            <li class="font-inter lg:w-40 hover:text-secondry font-light"><a href="./index.html#about">About Us</a></li>
+            <li class="font-inter lg:w-40 hover:text-secondry font-light"><a href="./OurProduct.html">Our Product</a></li>
+            <li class="font-inter lg:w-40 hover:text-secondry font-light"><a href="./Service.html">Services</a></li>
+            <li class="font-inter lg:w-40 hover:text-secondry font-light"><a href="./index.html#contact">Contact Us</a></li>
+          </div>
+          <div class="list-none mt-2 md:w-2/4 lg:w-64 text-slate-200 p-2 space-y-2">
+            <h2 class="text-lg font-semibold font-poppin text-secondry">Services</h2>
+            <li class="font-inter font-light"><a href="">Quality Sourcing</a></li>
+            <li class="font-inter font-light"><a href="">Customized Export Solutions</a></li>
+            <li class="font-inter font-light"><a href="">Quality Assurance</a></li>
+            <li class="font-inter font-light"><a href="">Sustainable Practices</a></li>
+            <li class="font-inter font-light"><a href="">Timely Delivery</a></li>
+            <li class="font-inter font-light"><a href="">Customer Support</a></li>
+          </div>
+          <div class="list-none mt-2  md:w-2/4 lg:w-96 text-slate-200 p-2 space-y-3">
+            <h2 class="text-lg font-semibold font-poppin text-secondry">Contact Us</h2>
+            <li class="font-inter font-light"><a href="tel:+919842523225">+91 9842523225</a></li>
+            <li class="font-inter font-light"><a href="mailto:gokulrajagopal.msc@gmail.com">gokulrajagopal.msc@gmail.com</a></li>
+            <p class="font-inter font-light leading-relaxed">2/900, Gandhiji 1st Street, <br>
+              SR Nagar(south),Andipalayam (po), <br> Mangalam Road, Tirupur, <br> Tamil Nadu, India - 641687.</p>
           </div>
         </div>
-      </section>
+          <div class="text-slate-200 md:flex md:justify-between lg:py-3 font-semibold font-poppin">
+          <div>
+            <p>©2024 Boatman Overseas. All rights reserved</p>
+          </div>
+          <div class="md:flex md:gap-x-6">
+            <p>Privacy & Policy</p>
+            <p>Terms & Condition</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="main.js"></script>
 </body>
